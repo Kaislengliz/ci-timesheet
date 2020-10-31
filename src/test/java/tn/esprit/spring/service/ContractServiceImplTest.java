@@ -22,6 +22,6 @@ public class ContractServiceImplTest {
     public void testRetrieveAllContrat() {
         List<Contrat> listContrat = contatService.getAllContrats(); 
        
-        assertEquals(7, listContrat.size());
+        assertEquals(0, listContrat.size());
     }
 }

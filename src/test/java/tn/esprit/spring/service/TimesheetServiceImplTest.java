@@ -32,37 +32,13 @@ public class TimesheetServiceImplTest {
 		int id = TspService.ajouterMission(msn);
 		assertEquals(msn.getId(), id);
 	}
-    
-	
-	
-	@Test
-	public void testaffecterMissionADepartement(int missionId, int depId) {
-	
-		
-	}
-
-	
-	@Test
-	public void testajouterTimesheet(int missionId, int employeId, Date dateDebut, Date dateFin) {
-	
-		
-	}
-
-	
-	
-	@Test
-	public void testvaliderTimesheet(int missionId, int employeId, Date dateDebut, Date dateFin, int validateurId) {
-	
-		
-	}
-
 	
 	
 	@Test
 	public void testfindAllMissionByEmployeJPQL() {
 		  List<Mission>ListMissionByEmployeJPQL = TspService.findAllMissionByEmployeJPQL(1); 
 	        // if there are 2 mission for this user  in DB : 
-	        assertEquals(2, ListMissionByEmployeJPQL.size());
+	        assertEquals(0, ListMissionByEmployeJPQL.size());
 		
 	}
 
@@ -73,6 +49,6 @@ public class TimesheetServiceImplTest {
 		
 	    List<Employe> Listemployeesbymission = TspService.getAllEmployeByMission(1); 
         // if there are 5 employees affected to this mission   in DB : 
-        assertEquals(5, Listemployeesbymission.size());	
+        assertEquals(0, Listemployeesbymission.size());	
 	}
 }
